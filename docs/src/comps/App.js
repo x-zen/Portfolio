@@ -15,10 +15,12 @@ function App() {
     <div className="App">
       <Navigation />
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route component={Err404} />
-      </Switch>
+      <div className="main-cont">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route component={Err404} />
+        </Switch>
+      </div>
     </div>
   );
 }

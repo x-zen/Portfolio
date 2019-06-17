@@ -3,6 +3,9 @@ import React from 'react';
 // React Router
 import { Link } from 'react-router-dom';
 
+import './Navigation.css';// Style Sheet
+
+
 class Navigation extends React.Component {
   constructor() {
     super();
@@ -14,10 +17,14 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className="navigation">
-        <h2>Navigation</h2>
+        <div className="nav-logo">
+          <h1>X-ZEN</h1>
+        </div>
 
-        <nav>
-          <Link to="/">Home</Link>
+        <nav className="nav">
+          <Link className="navLink" to="/">Home</Link>
+          <Link className="navLink" to="/about">About</Link>
+          <Link className="navLink" to="/portfolio">Portfolio</Link>
         </nav>
       </div>
     )

@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3rem;
+  background-color: black;
+}
+
+.nav-logo {
+  margin: auto 1rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: auto 1rem;
+}
+
+.navLink {
+  font-size: 2rem;
+  padding: 0.2rem 0.5rem;
+  margin: auto 0.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navLink:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 1s;
+}
